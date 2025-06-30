@@ -40,9 +40,21 @@
                     <a href="ayudar.html" class="text-gray-700 hover:text-primary transition">Cómo Ayudar</a>
                     <a href="contacto.html" class="text-gray-700 hover:text-primary transition">Contacto</a>
                 </div>
-                <button class="md:hidden" title="Menú">
+                <!-- Botón menú móvil -->
+                <button class="md:hidden" id="mobile-menu-button" aria-label="Menú">
                     <i class="fas fa-bars text-gray-700"></i>
                 </button>
+            </div>
+            <!-- Menú móvil -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+                    <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition rounded-md">Inicio</a>
+                    <a href="peluditos.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition rounded-md">Nuestros Peluditos</a>
+                    <a href="historias.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition rounded-md">Historias</a>
+                    <a href="eventos.html" class="block px-3 py-2 text-primary font-semibold rounded-md">Eventos</a>
+                    <a href="ayudar.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition rounded-md">Cómo Ayudar</a>
+                    <a href="contacto.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition rounded-md">Contacto</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -435,6 +447,29 @@
                 nav.classList.add('shadow-xl');
             } else {
                 nav.classList.remove('shadow-xl');
+            }
+        });
+
+        // Menú hamburguesa móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
             }
         });
     </script>
