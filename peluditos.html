@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Peluditos - Refugio Peludito</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f59e0b'/><text y='.9em' font-size='90' x='50%' text-anchor='middle' fill='white'><tspan>🐾</tspan></text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f59e0b',
+                        secondary: '#3b82f6',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Logo Refugio Peludito" class="w-8 h-8">
+                    <span class="text-xl font-bold text-primary">Refugio Peludito</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Inicio</a>
+                    <a href="peluditos.html" class="text-primary font-semibold">Nuestros Peluditos</a>
+                    <a href="historias.html" class="text-gray-700 hover:text-primary transition">Historias</a>
+                    <a href="eventos.html" class="text-gray-700 hover:text-primary transition">Eventos</a>
+                    <a href="ayudar.html" class="text-gray-700 hover:text-primary transition">Cómo Ayudar</a>
+                    <a href="contacto.html" class="text-gray-700 hover:text-primary transition">Contacto</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 bg-gradient-to-br from-blue-50 to-amber-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="mt-20 text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                <i class="fas fa-dog text-primary mr-4"></i>Nuestros <span class="text-primary">Peluditos</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Conoce a quienes esperan una familia. Cada uno tiene mucho amor para dar y una historia única que contar.
+            </p>
+            <div class="flex justify-center space-x-4 mb-8">
+                <button class="bg-primary text-white px-6 py-3 rounded-full hover:bg-amber-600 transition filter-btn active" data-filter="all">
+                    Todos
+                </button>
+                <button class="bg-white text-gray-700 px-6 py-3 rounded-full hover:bg-gray-100 transition filter-btn" data-filter="dogs">
+                    🐶 Perros
+                </button>
+                <button class="bg-white text-gray-700 px-6 py-3 rounded-full hover:bg-gray-100 transition filter-btn" data-filter="cats">
+                    🐱 Gatos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peluditos Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="peluditos-grid">
+                <!-- Rocky -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition pet-card" data-type="dogs">
+                    <img src="perro mestizo.jpg" alt="Rocky" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-gray-800">🐶 Rocky</h3>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">2 años</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Juguetón, curioso, sociable con niños</p>
+                        <p class="text-sm text-gray-500 mb-4">
+                            Rocky fue encontrado jugando entre autos en un mercado. Desde que llegó al refugio, 
+                            demostró ser un perrito lleno de energía y amor. Sueña con un jardín donde correr 
+                            y una familia que lo lleve de paseo cada día.
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-accent font-semibold">✓ Vacunado • Esterilizado • Desparasitado</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                            <i class="fas fa-heart mr-2"></i>Adoptar a Rocky
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Nube -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition pet-card" data-type="cats">
+                    <img src="gato blanco.jpg" alt="Nube" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-gray-800">🐱 Nube</h3>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">1 año</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Cariñosa, tranquila, ronroneadora profesional</p>
+                        <p class="text-sm text-gray-500 mb-4">
+                            Nube apareció en la puerta del refugio durante una noche fría. Desde entonces, 
+                            conquista a todos con su mirada tierna y sus suaves maullidos. Es perfecta para 
+                            departamentos o casas tranquilas.
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-accent font-semibold">✓ Esterilizada • Vacunada • Recuperada</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                            <i class="fas fa-heart mr-2"></i>Adoptar a Nube
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bruno -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition pet-card" data-type="dogs">
+                    <img src="perro adulto.jpg" alt="Bruno" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-gray-800">🐶 Bruno</h3>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">4 años</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Protector, obediente, leal</p>
+                        <p class="text-sm text-gray-500 mb-4">
+                            Bruno vivió encadenado mucho tiempo. Hoy disfruta de paseos largos y caricias. 
+                            Busca una familia con espacio y amor, ideal para casas con patio y personas activas.
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-accent font-semibold">✓ Esterilizado • Vacunado • Saludable</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                            <i class="fas fa-heart mr-2"></i>Adoptar a Bruno
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Lila -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition pet-card" data-type="cats">
+                    <img src="gato a rayas.jpeg" alt="Lila" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-gray-800">🐱 Lila</h3>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">8 meses</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Traviesa, juguetona, curiosa</p>
+                        <p class="text-sm text-gray-500 mb-4">
+                            Lila fue rescatada junto a sus hermanos de una caja abandonada. Es una gatita llena 
+                            de energía y perfecta para familias que quieran risas y travesuras en casa.
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-accent font-semibold">✓ Esterilizada • Vacunas al día</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                            <i class="fas fa-heart mr-2"></i>Adoptar a Lila
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sol -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition pet-card" data-type="dogs">
+                    <img src="perrito viejo.jpg" alt="Sol" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-gray-800">🐶 Sol</h3>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">9 años</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Tranquila, amorosa, ideal para compañía</p>
+                        <p class="text-sm text-gray-500 mb-4">
+                            Sol es una perrita senior que necesita un retiro digno. Ama las siestas al sol y 
+                            los paseos cortos. Ideal para personas mayores o familias tranquilas.
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-accent font-semibold">✓ Vacunada • Esterilizada • Control artritis</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                            <i class="fas fa-heart mr-2"></i>Adoptar a Sol
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Coco -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition pet-card" data-type="cats">
+                    <img src="gato adulto.jpg" alt="Coco" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-gray-800">🐱 Coco</h3>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">3 años</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Independiente, observador, limpio</p>
+                        <p class="text-sm text-gray-500 mb-4">
+                            Coco llegó siendo muy desconfiado, pero con paciencia se volvió un gato cariñoso y 
+                            curioso. Es ideal para hogares que valoran la independencia felina.
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-accent font-semibold">✓ Esterilizado • Vacunado • Sano</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                            <i class="fas fa-heart mr-2"></i>Adoptar a Coco
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Linda -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition pet-card" data-type="dogs">
+                    <img src="cachorro crema.jpg" alt="Linda" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-gray-800">🐶 Linda</h3>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">1.5 años</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Dulce, obediente, muy cariñosa</p>
+                        <p class="text-sm text-gray-500 mb-4">
+                            Linda fue rescatada de un basural. Desde entonces, demuestra gratitud con lamidos y 
+                            saltos de alegría. Sueña con una familia con niños y mucho tiempo para jugar.
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-accent font-semibold">✓ Esterilizada • Vacunada • 100% sana</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                            <i class="fas fa-heart mr-2"></i>Adoptar a Linda
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Más peluditos -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition pet-card" data-type="cats">
+                    <img src="gato comiendo.jpg" alt="Mimi" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-gray-800">🐱 Mimi</h3>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">2 años</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Elegante, cariñosa, le encanta dormir</p>
+                        <p class="text-sm text-gray-500 mb-4">
+                            Mimi es una gatita muy elegante que busca un hogar tranquilo donde pueda recibir 
+                            mimos y cariño. Es perfecta para personas que buscan compañía silenciosa.
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-accent font-semibold">✓ Esterilizada • Vacunada • Sana</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                            <i class="fas fa-heart mr-2"></i>Adoptar a Mimi
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition pet-card" data-type="dogs">
+                    <img src="perro negro.jpg" alt="Peluso" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-gray-800">🐶 Peluso</h3>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">3 años</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Enérgico, fiel, ama correr</p>
+                        <p class="text-sm text-gray-500 mb-4">
+                            Peluso es un perro muy activo que necesita una familia que disfrute de los deportes 
+                            al aire libre. Le encanta correr y jugar en espacios abiertos.
+                        </p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-accent font-semibold">✓ Esterilizado • Vacunado • Atlético</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                            <i class="fas fa-heart mr-2"></i>Adoptar a Peluso
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Adopción -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-home text-primary mr-3"></i>Proceso de Adopción</h2>
+                <p class="text-xl text-gray-600">
+                    Adoptar es un proceso responsable. Te acompañamos en cada paso.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-5 gap-6 mb-12">
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Revisa nuestros peluditos</h3>
+                    <p class="text-sm text-gray-600">Explora las fichas y encuentra tu compañero ideal</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Llena el formulario</h3>
+                    <p class="text-sm text-gray-600">Completa la solicitud de adopción online</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Entrevista</h3>
+                    <p class="text-sm text-gray-600">Conversamos contigo para conocerte mejor</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Visita al refugio</h3>
+                    <p class="text-sm text-gray-600">Conoce a tu futuro compañero en persona</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">5</div>
+                    <h3 class="font-semibold text-gray-800 mb-2">¡Adopción!</h3>
+                    <p class="text-sm text-gray-600">Firma el compromiso y lleva a casa a tu nuevo amigo</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 text-center shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">¿Listo para adoptar?</h3>
+                <p class="text-gray-600 mb-6">
+                    Completa nuestro formulario de pre-adopción y nos pondremos en contacto contigo
+                </p>
+                <button class="bg-secondary text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-600 transition text-lg">
+                    <i class="fas fa-file-alt mr-2"></i>Llenar Formulario de Adopción
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="logo.png" alt="Logo Refugio Peludito" class="w-6 h-6">
+                        <span class="text-xl font-bold">Refugio Peludito</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Rescatamos, protegemos y damos en adopción a perros y gatos abandonados.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="ayudar.html" class="hover:text-white transition">Cómo ayudar</a></li>
+                        <li><a href="eventos.html" class="hover:text-white transition">Eventos</a></li>
+                        <li><a href="historias.html" class="hover:text-white transition">Historias</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Adopción responsable</li>
+                        <li>Campañas de esterilización</li>
+                        <li>Educación animal</li>
+                        <li>Tienda solidaria</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📍 Av. Esperanza 123, Lima</p>
+                        <p>📞 +51 999 999 999</p>
+                        <p>📧 contacto@refugiopeludito.org</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Refugio Peludito. Todos los derechos reservados. Hecho con ❤️ para nuestros peluditos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Funcionalidad de filtros
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Actualizar botones activos
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('active', 'bg-primary', 'text-white');
+                    b.classList.add('bg-white', 'text-gray-700');
+                });
+                this.classList.add('active', 'bg-primary', 'text-white');
+                this.classList.remove('bg-white', 'text-gray-700');
+
+                // Filtrar mascotas
+                const filter = this.dataset.filter;
+                document.querySelectorAll('.pet-card').forEach(card => {
+                    if (filter === 'all' || card.dataset.type === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Cambiar estilo del navbar al hacer scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>

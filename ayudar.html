@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Puedes Ayudar - Refugio Peludito</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f59e0b'/><text y='.9em' font-size='90' x='50%' text-anchor='middle' fill='white'><tspan>🐾</tspan></text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f59e0b',
+                        secondary: '#3b82f6',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Logo Refugio Peludito" class="w-8 h-8">
+                    <span class="text-xl font-bold text-primary">Refugio Peludito</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Inicio</a>
+                    <a href="peluditos.html" class="text-gray-700 hover:text-primary transition">Nuestros Peluditos</a>
+                    <a href="historias.html" class="text-gray-700 hover:text-primary transition">Historias</a>
+                    <a href="eventos.html" class="text-gray-700 hover:text-primary transition">Eventos</a>
+                    <a href="ayudar.html" class="text-primary font-semibold">Cómo Ayudar</a>
+                    <a href="contacto.html" class="text-gray-700 hover:text-primary transition">Contacto</a>
+                </div>
+                <button class="md:hidden" title="Menú">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 bg-gradient-to-br from-rose-50 to-orange-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="mt-20 text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                <i class="fas fa-heart text-primary mr-4"></i>Cómo Puedes <span class="text-primary">Ayudar</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Hay muchas formas de hacer la diferencia en la vida de nuestros peluditos. 
+                Cada granito de arena cuenta y tu ayuda es fundamental para continuar salvando vidas.
+            </p>
+            <div class="bg-white bg-opacity-80 p-6 rounded-2xl max-w-2xl mx-auto">
+                <p class="text-lg text-gray-700">
+                    <i class="fas fa-heart text-primary mr-2"></i>
+                    "Juntos podemos construir un mundo sin abandono animal"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formas de Ayudar -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-star text-primary mr-3"></i>Formas de Colaborar</h2>
+                <p class="text-xl text-gray-600">
+                    Elige la forma que mejor se adapte a ti
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Adoptar -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition group">
+                    <div class="text-6xl mb-6 group-hover:scale-110 transition-transform">🏡</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Adopta</h3>
+                    <p class="text-gray-600 mb-6">
+                        Cambia una vida para siempre y llena tu hogar de amor incondicional. 
+                        La adopción es la forma más directa de salvar una vida.
+                    </p>
+                    <ul class="text-left text-gray-600 mb-6 space-y-2">
+                        <li><i class="fas fa-check text-accent mr-2"></i>Proceso guiado y acompañado</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Mascotas esterilizadas y vacunadas</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Seguimiento post-adopción</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Asesoría veterinaria</li>
+                    </ul>
+                    <a href="peluditos.html" class="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-amber-600 transition block">
+                        Ver Peluditos Disponibles
+                    </a>
+                </div>
+
+                <!-- Apadrinar -->
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition group">
+                    <div class="text-6xl mb-6 group-hover:scale-110 transition-transform">🤝</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Apadrina</h3>
+                    <p class="text-gray-600 mb-6">
+                        Si no puedes adoptar, puedes apadrinar a un peludito específico y 
+                        ayudar a cubrir sus gastos hasta que encuentre familia.
+                    </p>
+                    <ul class="text-left text-gray-600 mb-6 space-y-2">
+                        <li><i class="fas fa-check text-accent mr-2"></i>Actualizaciones regulares</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Visitas cuando quieras</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Certificado de padrino</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Fotos y videos de progreso</li>
+                    </ul>
+                    <button class="bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition">
+                        Elegir un Ahijado
+                    </button>
+                </div>
+
+                <!-- Donar -->
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition group">
+                    <div class="text-6xl mb-6 group-hover:scale-110 transition-transform">💝</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Dona</h3>
+                    <p class="text-gray-600 mb-6">
+                        Tu aporte económico, por pequeño que sea, nos ayuda a cubrir gastos 
+                        médicos, alimentación y mantenimiento del refugio.
+                    </p>
+                    <ul class="text-left text-gray-600 mb-6 space-y-2">
+                        <li><i class="fas fa-check text-accent mr-2"></i>Donaciones únicas o recurrentes</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Transferencias seguras</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Recibo por donaciones</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Transparencia en el uso</li>
+                    </ul>
+                    <button class="bg-accent text-white px-6 py-3 rounded-full font-semibold hover:bg-emerald-600 transition">
+                        Donar Ahora
+                    </button>
+                </div>
+
+                <!-- Voluntario -->
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition group">
+                    <div class="text-6xl mb-6 group-hover:scale-110 transition-transform">🙋‍♀️</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Sé Voluntario</h3>
+                    <p class="text-gray-600 mb-6">
+                        Comparte tu tiempo, habilidades y cariño. Los voluntarios son el corazón 
+                        de nuestro refugio y hacen posible nuestra labor diaria.
+                    </p>
+                    <ul class="text-left text-gray-600 mb-6 space-y-2">
+                        <li><i class="fas fa-check text-accent mr-2"></i>Cuidado directo de animales</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Apoyo en eventos</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Tareas administrativas</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Horarios flexibles</li>
+                    </ul>
+                    <button class="bg-purple-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-600 transition">
+                        Aplicar como Voluntario
+                    </button>
+                </div>
+
+                <!-- Difundir -->
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition group">
+                    <div class="text-6xl mb-6 group-hover:scale-110 transition-transform">📢</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Difunde</h3>
+                    <p class="text-gray-600 mb-6">
+                        Comparte nuestras publicaciones, historias y mascotas en adopción. 
+                        Cada share puede llegar al corazón de la familia perfecta.
+                    </p>
+                    <ul class="text-left text-gray-600 mb-6 space-y-2">
+                        <li><i class="fas fa-check text-accent mr-2"></i>Comparte en redes sociales</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Cuenta a familiares y amigos</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Usa nuestros hashtags</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Participa en campañas</li>
+                    </ul>
+                    <button class="bg-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-600 transition">
+                        Material para Compartir
+                    </button>
+                </div>
+
+                <!-- App -->
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition group">
+                    <div class="text-6xl mb-6 group-hover:scale-110 transition-transform">📱</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Descarga la App</h3>
+                    <p class="text-gray-600 mb-6">
+                        Con nuestra app móvil puedes ayudar desde cualquier lugar: 
+                        reportar emergencias, donar y estar al día con nuestras actividades.
+                    </p>
+                    <ul class="text-left text-gray-600 mb-6 space-y-2">
+                        <li><i class="fas fa-check text-accent mr-2"></i>Botón SOS para emergencias</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Donaciones rápidas</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Notificaciones de eventos</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Galería de adopciones</li>
+                    </ul>
+                    <button class="bg-indigo-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-600 transition">
+                        Descargar App
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Adopción Detallado -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-home text-primary mr-3"></i>Proceso de Adopción Paso a Paso</h2>
+                <p class="text-xl text-gray-600">
+                    Te acompañamos en cada etapa para asegurar una adopción exitosa
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-5 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                    <h3 class="font-semibold text-gray-800 mb-3">Conoce a nuestros peluditos</h3>
+                    <p class="text-sm text-gray-600">Navega por nuestras fichas online o visita el refugio para conocer a quien puede ser tu nuevo compañero</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                    <h3 class="font-semibold text-gray-800 mb-3">Llena el formulario</h3>
+                    <p class="text-sm text-gray-600">Completa nuestra solicitud de adopción con tus datos, experiencia y expectativas sobre tu futuro peludito</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                    <h3 class="font-semibold text-gray-800 mb-3">Entrevista personal</h3>
+                    <p class="text-sm text-gray-600">Nuestro equipo conversará contigo para conocerte mejor y asegurar la mejor compatibilidad</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+                    <h3 class="font-semibold text-gray-800 mb-3">Período de adaptación</h3>
+                    <p class="text-sm text-gray-600">Si todo está bien, tendrás un tiempo para conocer mejor a tu nuevo compañero antes de formalizar</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">5</div>
+                    <h3 class="font-semibold text-gray-800 mb-3">¡Adopción exitosa!</h3>
+                    <p class="text-sm text-gray-600">Firma el compromiso de adopción y disfruta de la compañía de tu nuevo mejor amigo para toda la vida</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8 items-center ml-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">¿Qué incluye la adopción?</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li><i class="fas fa-check text-accent mr-3"></i>Mascota esterilizada y con chip de identificación</li>
+                            <li><i class="fas fa-check text-accent mr-3"></i>Vacunas al día y certificado de salud</li>
+                            <li><i class="fas fa-check text-accent mr-3"></i>Cartilla sanitaria y documento de adopción</li>
+                            <li><i class="fas fa-check text-accent mr-3"></i>Kit básico de bienvenida (collar, placa, juguete)</li>
+                            <li><i class="fas fa-check text-accent mr-3"></i>Consulta veterinaria gratuita en 30 días</li>
+                            <li><i class="fas fa-check text-accent mr-3"></i>Seguimiento y apoyo post-adopción</li>
+                        </ul>
+                        <button class="mt-6 bg-secondary text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition">
+                            Iniciar Proceso de Adopción
+                        </button>
+                    </div>
+                    <div>
+                        <img src="adoptaton perros y gatos.png" alt="Imagen de adopción especial" class="rounded-2xl shadow-lg mb-6">
+                        <div class="bg-blue-50 p-4 rounded-lg mr-32">
+                            <p class="text-sm text-gray-600 text-center">
+                                <i class="fas fa-heart text-red-500 mr-2"></i>
+                                "Adoptar salva dos vidas: la del animal rescatado y la tuya, que se llena de amor incondicional"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donaciones -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-credit-card text-primary mr-3"></i>Donaciones</h2>
+                <p class="text-xl text-gray-600">
+                    Cada sol que aportes se transforma en comida, medicinas y esperanza para nuestros peluditos
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Opciones de Donación -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Formas de Donar</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
+                            <h4 class="font-semibold text-gray-800 mb-2">💰 Donación Monetaria</h4>
+                            <p class="text-gray-600 mb-3">Transferencias bancarias, depósitos o pagos online</p>
+                            <p class="text-sm text-gray-500">
+                                <strong>BCP:</strong> 194-123456789-0-12<br>
+                                <strong>Interbank:</strong> 898-987654321-0-87<br>
+                                <strong>Yape/Plin:</strong> +51 999 999 999
+                            </p>
+                        </div>
+
+                        <div class="bg-green-50 p-6 rounded-xl border-l-4 border-green-500">
+                            <h4 class="font-semibold text-gray-800 mb-2">🥫 Donación en Especies</h4>
+                            <p class="text-gray-600 mb-3">Alimento, medicinas, materiales de limpieza</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Alimento balanceado para perros y gatos</li>
+                                <li>• Medicamentos veterinarios</li>
+                                <li>• Mantas y cojines</li>
+                                <li>• Productos de limpieza y desinfección</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-purple-50 p-6 rounded-xl border-l-4 border-purple-500">
+                            <h4 class="font-semibold text-gray-800 mb-2">⏰ Donación de Tiempo</h4>
+                            <p class="text-gray-600">Voluntariado en cuidado, eventos, transporte o redes sociales</p>
+                        </div>
+
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800 mb-3">💡 Ejemplos de impacto:</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• S/50 = Vacunas para un cachorro</li>
+                                <li>• S/100 = Esterilización de una mascota</li>
+                                <li>• S/200 = Alimentación mensual para 5 peluditos</li>
+                                <li>• S/500 = Cirugía de emergencia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de Donación -->
+                <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Realizar Donación</h3>
+                    
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-3">Cantidad a donar:</label>
+                        <div class="grid grid-cols-2 gap-3 mb-4">
+                            <button class="bg-white border-2 border-gray-300 py-3 rounded-lg font-semibold hover:border-accent hover:bg-accent hover:text-white transition">
+                                S/50
+                            </button>
+                            <button class="bg-white border-2 border-gray-300 py-3 rounded-lg font-semibold hover:border-accent hover:bg-accent hover:text-white transition">
+                                S/100
+                            </button>
+                            <button class="bg-white border-2 border-gray-300 py-3 rounded-lg font-semibold hover:border-accent hover:bg-accent hover:text-white transition">
+                                S/200
+                            </button>
+                            <button class="bg-white border-2 border-gray-300 py-3 rounded-lg font-semibold hover:border-accent hover:bg-accent hover:text-white transition">
+                                S/500
+                            </button>
+                        </div>
+                        <input type="number" placeholder="Otra cantidad" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent">
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-3">Frecuencia:</label>
+                        <div class="flex space-x-4">
+                            <label class="flex items-center">
+                                <input type="radio" name="frequency" value="once" class="mr-2">
+                                <span>Una vez</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="frequency" value="monthly" class="mr-2">
+                                <span>Mensual</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-3">Método de pago:</label>
+                        <div class="space-y-3">
+                            <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center">
+                                <i class="fab fa-paypal mr-2"></i>PayPal
+                            </button>
+                            <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition flex items-center justify-center">
+                                <i class="fas fa-mobile-alt mr-2"></i>Yape / Plin
+                            </button>
+                            <button class="w-full bg-gray-600 text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition flex items-center justify-center">
+                                <i class="fas fa-university mr-2"></i>Transferencia Bancaria
+                            </button>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-accent text-white py-4 rounded-lg font-semibold hover:bg-emerald-600 transition text-lg">
+                        <i class="fas fa-heart mr-2"></i>Donar Ahora
+                    </button>
+
+                    <p class="text-xs text-gray-500 mt-4 text-center">
+                        Todas las donaciones son seguras y van directamente a nuestros programas de rescate
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voluntariado -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-users text-primary mr-3"></i>Programa de Voluntariado</h2>
+                <p class="text-xl text-gray-600">
+                    Únete a nuestro equipo de héroes anónimos y marca la diferencia en la vida de nuestros peluditos
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Áreas de Voluntariado</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl border-l-4 border-blue-500 shadow-md">
+                            <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                <i class="fas fa-heart text-blue-500 mr-3"></i>Cuidado Directo
+                            </h4>
+                            <p class="text-gray-600 mb-3">Alimentación, limpieza, socialización y paseos</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Horarios: Mañana (8-12h) o Tarde (2-6h)</li>
+                                <li>• Frecuencia: 1-2 veces por semana mínimo</li>
+                                <li>• Capacitación incluida</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border-l-4 border-green-500 shadow-md">
+                            <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                <i class="fas fa-camera text-green-500 mr-3"></i>Comunicaciones y Redes
+                            </h4>
+                            <p class="text-gray-600 mb-3">Fotografía, redes sociales, diseño gráfico</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Horario flexible, trabajo desde casa</li>
+                                <li>• Habilidades en diseño o fotografía</li>
+                                <li>• Creatividad y amor por los animales</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border-l-4 border-purple-500 shadow-md">
+                            <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                <i class="fas fa-calendar-alt text-purple-500 mr-3"></i>Eventos y Actividades
+                            </h4>
+                            <p class="text-gray-600 mb-3">Apoyo en adoptatones, ferias y campañas</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Fines de semana principalmente</li>
+                                <li>• Trabajo en equipo</li>
+                                <li>• Experiencia divertida y social</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border-l-4 border-yellow-500 shadow-md">
+                            <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                <i class="fas fa-car text-yellow-500 mr-3"></i>Transporte y Rescate
+                            </h4>
+                            <p class="text-gray-600 mb-3">Traslado a veterinaria, hogares temporales</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Vehículo propio requerido</li>
+                                <li>• Disponibilidad para emergencias</li>
+                                <li>• Viáticos cubiertos por el refugio</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border-l-4 border-red-500 shadow-md">
+                            <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                <i class="fas fa-clipboard text-red-500 mr-3"></i>Administración
+                            </h4>
+                            <p class="text-gray-600 mb-3">Gestión de adopciones, archivo, contabilidad</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Conocimientos básicos de oficina</li>
+                                <li>• Horarios de oficina flexibles</li>
+                                <li>• Ambiente profesional y ordenado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Aplicar como Voluntario</h3>
+                    
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Nombre Completo</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="Tu nombre">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Edad</label>
+                                <input type="number" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="Años">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="tu@email.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Teléfono</label>
+                            <input type="tel" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="+51 999 999 999">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Área de Interés (puedes elegir varias)</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" value="cuidado" class="mr-2">
+                                    <span>Cuidado directo de animales</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" value="comunicaciones" class="mr-2">
+                                    <span>Comunicaciones y redes sociales</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" value="eventos" class="mr-2">
+                                    <span>Eventos y actividades</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" value="transporte" class="mr-2">
+                                    <span>Transporte y rescate</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" value="administracion" class="mr-2">
+                                    <span>Administración</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Disponibilidad</label>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-2">Días de la semana:</p>
+                                    <div class="space-y-1">
+                                        <label class="flex items-center text-sm">
+                                            <input type="checkbox" class="mr-2"> Lunes a Viernes
+                                        </label>
+                                        <label class="flex items-center text-sm">
+                                            <input type="checkbox" class="mr-2"> Fines de semana
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-2">Horarios:</p>
+                                    <div class="space-y-1">
+                                        <label class="flex items-center text-sm">
+                                            <input type="checkbox" class="mr-2"> Mañanas (8-12h)
+                                        </label>
+                                        <label class="flex items-center text-sm">
+                                            <input type="checkbox" class="mr-2"> Tardes (2-6h)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">¿Por qué quieres ser voluntario?</label>
+                            <textarea rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="Cuéntanos tu motivación..."></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Experiencia previa con animales</label>
+                            <textarea rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="¿Has tenido mascotas? ¿Has trabajado con animales antes?"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-purple-500 text-white py-4 rounded-lg font-semibold hover:bg-purple-600 transition text-lg">
+                            <i class="fas fa-paper-plane mr-2"></i>Enviar Aplicación
+                        </button>
+                    </form>
+
+                    <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-info-circle text-blue-500 mr-2"></i>
+                            <strong>Próximo paso:</strong> Te contactaremos en 3-5 días para una charla informativa y conocerte mejor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">¡Tu ayuda marca la diferencia!</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                Cada acción cuenta, cada gesto importa. Juntos estamos construyendo un mundo mejor 
+                para los animales que más lo necesitan. ¡Únete a nuestra misión!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="peluditos.html" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
+                    <i class="fas fa-heart mr-2"></i>Adoptar Ahora
+                </a>
+                <button class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition">
+                    <i class="fas fa-hand-holding-heart mr-2"></i>Hacer Donación
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="logo.png" alt="Logo Refugio Peludito" class="w-6 h-6">
+                        <span class="text-xl font-bold">Refugio Peludito</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Rescatamos, protegemos y damos in adopción a perros y gatos abandonados.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="peluditos.html" class="hover:text-white transition">Adoptar</a></li>
+                        <li><a href="eventos.html" class="hover:text-white transition">Eventos</a></li>
+                        <li><a href="historias.html" class="hover:text-white transition">Historias</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Adopción responsable</li>
+                        <li>Campañas de esterilización</li>
+                        <li>Educación animal</li>
+                        <li>Tienda solidaria</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📍 Av. Esperanza 123, Lima</p>
+                        <p>📞 +51 999 999 999</p>
+                        <p>📧 contacto@refugiopeludito.org</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Refugio Peludito. Todos los derechos reservados. Hecho con ❤️ para nuestros peluditos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Cambiar estilo del navbar al hacer scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+
+        // Funcionalidad para botones de cantidad de donación
+        document.querySelectorAll('button').forEach(btn => {
+            if (btn.textContent.includes('S/')) {
+                btn.addEventListener('click', function() {
+                    // Remover estilo activo de otros botones
+                    document.querySelectorAll('button').forEach(b => {
+                        if (b.textContent.includes('S/')) {
+                            b.classList.remove('border-accent', 'bg-accent', 'text-white');
+                            b.classList.add('border-gray-300', 'bg-white');
+                        }
+                    });
+                    
+                    // Agregar estilo activo al botón clickeado
+                    this.classList.remove('border-gray-300', 'bg-white');
+                    this.classList.add('border-accent', 'bg-accent', 'text-white');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

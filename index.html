@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio Peludito - Hogar para perros y gatos rescatados</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f59e0b'/><text y='.9em' font-size='90' x='50%' text-anchor='middle' fill='white'><tspan>🐾</tspan></text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f59e0b',
+                        secondary: '#3b82f6',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Logo Refugio Peludito" class="w-8 h-8">
+                    <span class="text-xl font-bold text-primary">Refugio Peludito</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Inicio</a>
+                    <a href="peluditos.html" class="text-gray-700 hover:text-primary transition">Nuestros Peluditos</a>
+                    <a href="historias.html" class="text-gray-700 hover:text-primary transition">Historias</a>
+                    <a href="eventos.html" class="text-gray-700 hover:text-primary transition">Eventos</a>
+                    <a href="ayudar.html" class="text-gray-700 hover:text-primary transition">Cómo Ayudar</a>
+                    <a href="contacto.html" class="text-gray-700 hover:text-primary transition">Contacto</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-16 bg-gradient-to-br from-blue-50 to-amber-50 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="mt-20 text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                        <i class="fas fa-paw text-primary mr-4"></i>Refugio <span class="text-primary">Peludito</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Rescatamos, protegemos y damos en adopción a perros y gatos que han sido abandonados o maltratados. 
+                        Cada día trabajamos para ofrecerles una segunda oportunidad y un hogar lleno de amor.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="peluditos.html" class="bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-amber-600 transition text-center">
+                            <i class="fas fa-heart mr-2"></i>Adoptar Ahora
+                        </a>
+                        <a href="ayudar.html" class="bg-secondary text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-600 transition text-center">
+                            <i class="fas fa-hands-helping mr-2"></i>Cómo Ayudar
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="perro y gato.jpg" alt="Perro y gato rescatados" class="rounded-2xl shadow-2xl w-full h-96 object-cover">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-3xl">💝</span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Más de 500</p>
+                                <p class="text-sm text-gray-600">Rescates exitosos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Servicios -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-star text-primary mr-3"></i>¿Quiénes somos?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Conoce nuestra misión, visión y todo lo que hacemos por nuestros peluditos
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl text-center">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Nuestra Misión</h3>
+                    <p class="text-gray-600">
+                        Salvar vidas, brindar atención médica y emocional a nuestros peluditos y educar a la comunidad 
+                        sobre la importancia de la adopción y la tenencia responsable.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-8 rounded-2xl text-center">
+                    <div class="text-4xl mb-4">👁️</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Nuestra Visión</h3>
+                    <p class="text-gray-600">
+                        Convertirnos en una comunidad solidaria, comprometida con el bienestar animal y 
+                        libre de abandono y maltrato.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl text-center">
+                    <div class="text-4xl mb-4">🐶🐱</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">¿Qué hacemos?</h3>
+                    <p class="text-gray-600">
+                        Rescate, hogar temporal, campañas de adopción, esterilización, educación 
+                        y eventos para recaudar fondos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Servicios detallados -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-check-circle text-accent text-xl"></i>
+                        <span class="text-gray-700">Rescate de animales en situación de riesgo</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-check-circle text-accent text-xl"></i>
+                        <span class="text-gray-700">Hogar temporal con alimentación y cuidados médicos</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-check-circle text-accent text-xl"></i>
+                        <span class="text-gray-700">Campañas de adopción, esterilización y vacunación</span>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-check-circle text-accent text-xl"></i>
+                        <span class="text-gray-700">Charlas y talleres de educación animal</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-check-circle text-accent text-xl"></i>
+                        <span class="text-gray-700">Eventos para recaudar fondos</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-check-circle text-accent text-xl"></i>
+                        <span class="text-gray-700">Mucho amor y dedicación</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campañas y Tienda -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Campañas Solidarias -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <span class="text-3xl mr-3">📌</span>
+                        <h3 class="text-2xl font-bold text-gray-800">Campañas Solidarias</h3>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-4">Esterilización, vacunación y desparasitación</h4>
+                    <p class="text-gray-600 mb-6">
+                        Promovemos campañas abiertas a la comunidad para garantizar la salud de nuestros peluditos 
+                        y prevenir el abandono. Mantente informado de fechas y lugares a través de nuestra web y app.
+                    </p>
+                    <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                        <p class="text-sm text-gray-600 mb-2">Próxima campaña destacada:</p>
+                        <p class="font-semibold">📅 Fecha | 📍 Lugar | ✔️ Reserva tu cupo online</p>
+                    </div>
+                    <button class="bg-secondary text-white px-6 py-3 rounded-full hover:bg-blue-600 transition">
+                        Ver calendario de campañas
+                    </button>
+                </div>
+
+                <!-- Tienda Solidaria -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <span class="text-3xl mr-3">🛍️</span>
+                        <h3 class="text-2xl font-bold text-gray-800">Tienda Solidaria</h3>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-4">Nuestra tienda peludita</h4>
+                    <p class="text-gray-600 mb-6">
+                        Cada compra ayuda a nuestros rescatados. Encuentra collares, juguetes, vitaminas, 
+                        ropa, accesorios y productos veterinarios básicos.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check text-accent"></i>
+                            <span class="text-gray-600">Compra online</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check text-accent"></i>
+                            <span class="text-gray-600">Retiro en el refugio o envío</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check text-accent"></i>
+                            <span class="text-gray-600">100% de las ganancias van a alimentación, medicinas y rescates</span>
+                        </div>
+                    </div>
+                    <button class="bg-primary text-white px-6 py-3 rounded-full hover:bg-amber-600 transition">
+                        Visita nuestra tienda
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="logo.png" alt="Logo Refugio Peludito" class="w-6 h-6">
+                        <span class="text-xl font-bold">Refugio Peludito</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Rescatamos, protegemos y damos en adopción a perros y gatos abandonados.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="peluditos.html" class="hover:text-white transition">Adoptar</a></li>
+                        <li><a href="ayudar.html" class="hover:text-white transition">Cómo ayudar</a></li>
+                        <li><a href="eventos.html" class="hover:text-white transition">Eventos</a></li>
+                        <li><a href="historias.html" class="hover:text-white transition">Historias</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Adopción responsable</li>
+                        <li>Campañas de esterilización</li>
+                        <li>Educación animal</li>
+                        <li>Tienda solidaria</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📍 Av. Esperanza 123, Lima</p>
+                        <p>📞 +51 999 999 999</p>
+                        <p>📧 contacto@refugiopeludito.org</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Refugio Peludito. Todos los derechos reservados. Hecho con ❤️ para nuestros peluditos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts para interactividad básica -->
+    <script>
+        // Smooth scrolling para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Cambiar estilo del navbar al hacer scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos y Actividades - Refugio Peludito</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f59e0b'/><text y='.9em' font-size='90' x='50%' text-anchor='middle' fill='white'><tspan>🐾</tspan></text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f59e0b',
+                        secondary: '#3b82f6',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Logo Refugio Peludito" class="w-8 h-8">
+                    <span class="text-xl font-bold text-primary">Refugio Peludito</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Inicio</a>
+                    <a href="peluditos.html" class="text-gray-700 hover:text-primary transition">Nuestros Peluditos</a>
+                    <a href="historias.html" class="text-gray-700 hover:text-primary transition">Historias</a>
+                    <a href="eventos.html" class="text-primary font-semibold">Eventos</a>
+                    <a href="ayudar.html" class="text-gray-700 hover:text-primary transition">Cómo Ayudar</a>
+                    <a href="contacto.html" class="text-gray-700 hover:text-primary transition">Contacto</a>
+                </div>
+                <button class="md:hidden" title="Menú">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 bg-gradient-to-br from-green-50 to-blue-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="mt-20 text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                <i class="fas fa-calendar-alt text-primary mr-4"></i>Eventos y <span class="text-primary">Actividades</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Organizamos eventos especiales para recaudar fondos, crear conciencia y celebrar el amor por los animales. 
+                ¡Únete a nuestra comunidad peludita!
+            </p>
+            <div class="bg-white bg-opacity-80 p-6 rounded-2xl max-w-2xl mx-auto">
+                <p class="text-lg text-gray-700">
+                    <i class="fas fa-calendar-alt text-primary mr-2"></i>
+                    Próximo gran evento: 15 de Julio - Gran Kermés Peludita 2025
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximos Eventos -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-calendar-check text-primary mr-3"></i>Próximos Eventos</h2>
+                <p class="text-xl text-gray-600">
+                    No te pierdas nuestras actividades programadas
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <!-- Evento Principal -->
+                <div class="bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl p-8 shadow-lg">
+                    <div class="bg-primary text-white px-4 py-2 rounded-full inline-block mb-4">
+                        <span class="font-semibold">PRÓXIMO EVENTO</span>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">🎪 Gran Kermés Peludita 2025</h3>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-calendar text-primary"></i>
+                            <span class="text-gray-700">Sábado 15 de Julio, 2025</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-primary"></i>
+                            <span class="text-gray-700">10:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            <span class="text-gray-700">Parque Central de Miraflores</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Un día lleno de diversión con juegos, comida deliciosa, música en vivo y adopciones especiales. 
+                        Habrá actividades para toda la familia y nuestros peluditos estarán esperando conocer 
+                        a sus futuras familias.
+                    </p>
+                    <ul class="text-gray-600 mb-6 space-y-2">
+                        <li><i class="fas fa-check text-accent mr-2"></i>Adopciones en vivo</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Concurso de disfraces para mascotas</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Food trucks y música</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Charlas sobre cuidado animal</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i>Zona de juegos para niños</li>
+                    </ul>
+                    <button class="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                        <i class="fas fa-ticket-alt mr-2"></i>Confirmar Asistencia
+                    </button>
+                </div>
+
+                <!-- Calendario de Eventos -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">📋 Calendario del Mes</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-secondary p-4 bg-blue-50 rounded">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-gray-800">Campaña de Esterilización</h4>
+                                <span class="bg-secondary text-white px-2 py-1 rounded text-sm">5 JUL</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Jornada gratuita de esterilización en el refugio</p>
+                        </div>
+
+                        <div class="border-l-4 border-accent p-4 bg-green-50 rounded">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-gray-800">Maratón Solidaria</h4>
+                                <span class="bg-accent text-white px-2 py-1 rounded text-sm">22 JUL</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Corre 5K junto a tu mascota y ayuda a recaudar fondos</p>
+                        </div>
+
+                        <div class="border-l-4 border-purple-500 p-4 bg-purple-50 rounded">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-gray-800">Taller de Cuidados</h4>
+                                <span class="bg-purple-500 text-white px-2 py-1 rounded text-sm">29 JUL</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Aprende sobre nutrición y cuidados básicos</p>
+                        </div>
+
+                        <div class="border-l-4 border-pink-500 p-4 bg-pink-50 rounded">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-gray-800">Rifa Peludita</h4>
+                                <span class="bg-pink-500 text-white px-2 py-1 rounded text-sm">8 AGO</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Grandes premios para apoyar nuestra causa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <button class="w-full bg-secondary text-white py-3 rounded-full font-semibold hover:bg-blue-600 transition">
+                            <i class="fas fa-calendar-plus mr-2"></i>Ver Calendario Completo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tipos de Eventos -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-star text-primary mr-3"></i>Tipos de Eventos</h2>
+                <p class="text-xl text-gray-600">
+                    Organizamos diferentes actividades durante todo el año
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Kermés -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition">
+                    <div class="bg-gradient-to-br from-pink-100 to-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-4xl">🎪</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Kermés Peludita</h3>
+                    <p class="text-gray-600 mb-6">
+                        Eventos familiares con juegos, comida, música y adopciones en vivo. 
+                        Una experiencia divertida para toda la familia.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Adopciones especiales</li>
+                        <li>• Concursos de mascotas</li>
+                        <li>• Food trucks</li>
+                        <li>• Entretenimiento en vivo</li>
+                    </ul>
+                </div>
+
+                <!-- Maratón -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition">
+                    <div class="bg-gradient-to-br from-blue-100 to-cyan-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-4xl">🏃‍♀️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Maratón Solidaria</h3>
+                    <p class="text-gray-600 mb-6">
+                        Corre junto a tu mascota en diferentes categorías. Una forma saludable 
+                        de ayudar mientras ejercitas con tu compañero.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Categorías 5K y 10K</li>
+                        <li>• Carrera con mascotas</li>
+                        <li>• Medallas conmemorativas</li>
+                        <li>• Hidratación incluida</li>
+                    </ul>
+                </div>
+
+                <!-- Rifas -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition">
+                    <div class="bg-gradient-to-br from-yellow-100 to-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-4xl">🎟️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Rifas Benéficas</h3>
+                    <p class="text-gray-600 mb-6">
+                        Premios increíbles donados por empresas amigas. Una forma emocionante 
+                        de ganar mientras apoyas nuestra causa.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Electrodomésticos</li>
+                        <li>• Vouchers de viaje</li>
+                        <li>• Productos para mascotas</li>
+                        <li>• Experiencias gastronómicas</li>
+                    </ul>
+                </div>
+
+                <!-- Campañas -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition">
+                    <div class="bg-gradient-to-br from-green-100 to-emerald-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-4xl">💉</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Campañas de Salud</h3>
+                    <p class="text-gray-600 mb-6">
+                        Esterilización, vacunación y desparasitación gratuita o a bajo costo 
+                        para la comunidad.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Esterilización gratuita</li>
+                        <li>• Vacunación antirrábica</li>
+                        <li>• Desparasitación</li>
+                        <li>• Consultas veterinarias</li>
+                    </ul>
+                </div>
+
+                <!-- Talleres -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition">
+                    <div class="bg-gradient-to-br from-purple-100 to-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-4xl">📚</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Talleres Educativos</h3>
+                    <p class="text-gray-600 mb-6">
+                        Aprende sobre cuidado animal, primeros auxilios, nutrición y 
+                        tenencia responsable de mascotas.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Primeros auxilios caninos</li>
+                        <li>• Nutrición animal</li>
+                        <li>• Entrenamiento básico</li>
+                        <li>• Cuidados geriátricos</li>
+                    </ul>
+                </div>
+
+                <!-- Adoptatones -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition">
+                    <div class="bg-gradient-to-br from-red-100 to-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-4xl">❤️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Adoptatones</h3>
+                    <p class="text-gray-600 mb-6">
+                        Eventos dedicados exclusivamente a encontrar familias para nuestros peluditos. 
+                        El día más emotivo del refugio.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Proceso de adopción express</li>
+                        <li>• Conoce a todos los peluditos</li>
+                        <li>• Asesoría especializada</li>
+                        <li>• Kit de bienvenida incluido</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Eventos Pasados -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-camera text-primary mr-3"></i>Galería de Eventos</h2>
+                <p class="text-xl text-gray-600">
+                    Momentos especiales de nuestros eventos anteriores
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="Kermés de Navidad 2024.jpg" alt="Kermés de Navidad" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-semibold">Kermés de Navidad 2024</h4>
+                            <p class="text-sm">¡15 adopciones exitosas!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="esterilizacion.jpeg" alt="Campaña de Esterilización" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-semibold">Campaña de Esterilización</h4>
+                            <p class="text-sm">50 mascotas atendidas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="maraton benefico.png" alt="Maratón Solidaria" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-semibold">Maratón Solidaria 2024</h4>
+                            <p class="text-sm">200 participantes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="Taller de Cuidados.png" alt="Taller de Cuidados" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-semibold">Taller de Cuidados</h4>
+                            <p class="text-sm">Educación para la comunidad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="adoptaton especial.png" alt="Adoptatón Especial" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-semibold">Adoptatón Especial</h4>
+                            <p class="text-sm">Un día lleno de amor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="rifa benefica.png" alt="Rifa Benéfica" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-semibold">Rifa Benéfica</h4>
+                            <p class="text-sm">Fondos para el refugio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-secondary to-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">¡Participa en nuestros eventos!</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                Cada evento es una oportunidad de ayudar, conocer gente maravillosa y ser parte de una comunidad 
+                que trabaja por el bienestar animal. ¡Te esperamos!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
+                    <i class="fas fa-bell mr-2"></i>Suscribirme a Notificaciones
+                </button>
+                <a href="contacto.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition">
+                    <i class="fas fa-envelope mr-2"></i>Contactar para Colaborar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="logo.png" alt="Logo Refugio Peludito" class="w-6 h-6">
+                        <span class="text-xl font-bold">Refugio Peludito</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Rescatamos, protegemos y damos en adopción a perros y gatos abandonados.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="peluditos.html" class="hover:text-white transition">Adoptar</a></li>
+                        <li><a href="ayudar.html" class="hover:text-white transition">Cómo ayudar</a></li>
+                        <li><a href="historias.html" class="hover:text-white transition">Historias</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Adopción responsable</li>
+                        <li>Campañas de esterilización</li>
+                        <li>Educación animal</li>
+                        <li>Tienda solidaria</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📍 Av. Esperanza 123, Lima</p>
+                        <p>📞 +51 999 999 999</p>
+                        <p>📧 contacto@refugiopeludito.org</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Refugio Peludito. Todos los derechos reservados. Hecho con ❤️ para nuestros peluditos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Cambiar estilo del navbar al hacer scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>

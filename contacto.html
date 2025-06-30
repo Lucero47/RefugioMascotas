@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Refugio Peludito</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f59e0b'/><text y='.9em' font-size='90' x='50%' text-anchor='middle' fill='white'><tspan>🐾</tspan></text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f59e0b',
+                        secondary: '#3b82f6',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Logo Refugio Peludito" class="w-8 h-8">
+                    <span class="text-xl font-bold text-primary">Refugio Peludito</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Inicio</a>
+                    <a href="peluditos.html" class="text-gray-700 hover:text-primary transition">Nuestros Peluditos</a>
+                    <a href="historias.html" class="text-gray-700 hover:text-primary transition">Historias</a>
+                    <a href="eventos.html" class="text-gray-700 hover:text-primary transition">Eventos</a>
+                    <a href="ayudar.html" class="text-gray-700 hover:text-primary transition">Cómo Ayudar</a>
+                    <a href="contacto.html" class="text-primary font-semibold">Contacto</a>
+                </div>
+                <button class="md:hidden" title="Menú">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 bg-gradient-to-br from-cyan-50 to-blue-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="mt-20 text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                <i class="fas fa-phone text-primary mr-4"></i><span class="text-primary">Contáctanos</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Estamos aquí para ayudarte y resolver cualquier duda que tengas. 
+                Tu mensaje es importante para nosotros y nuestros peluditos.
+            </p>
+            <div class="bg-white bg-opacity-80 p-6 rounded-2xl max-w-2xl mx-auto">
+                <p class="text-lg text-gray-700">
+                    <i class="fas fa-clock text-primary mr-2"></i>
+                    Respondemos en menos de 24 horas
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Información Principal -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8">Información de Contacto</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 bg-gradient-to-r from-primary to-amber-500 p-6 rounded-2xl text-white">
+                            <div class="bg-white bg-opacity-20 p-4 rounded-full">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Nuestra Dirección</h3>
+                                <p class="opacity-90">Av. Esperanza 123, Miraflores</p>
+                                <p class="opacity-90">Lima, Perú</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 bg-gradient-to-r from-secondary to-blue-600 p-6 rounded-2xl text-white">
+                            <div class="bg-white bg-opacity-20 p-4 rounded-full">
+                                <i class="fas fa-phone text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Teléfonos</h3>
+                                <p class="opacity-90">+51 999 999 999 (Principal)</p>
+                                <p class="opacity-90">+51 888 888 888 (Emergencias)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 bg-gradient-to-r from-accent to-emerald-600 p-6 rounded-2xl text-white">
+                            <div class="bg-white bg-opacity-20 p-4 rounded-full">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Correos Electrónicos</h3>
+                                <p class="opacity-90">contacto@refugiopeludito.org</p>
+                                <p class="opacity-90">adopciones@refugiopeludito.org</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horarios -->
+                    <div class="mt-8 bg-gray-50 p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            <i class="fas fa-clock text-primary mr-2"></i>Horarios de Atención
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-700 mb-2">Refugio</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li>Lunes a Viernes: 8:00 AM - 6:00 PM</li>
+                                    <li>Sábados: 8:00 AM - 4:00 PM</li>
+                                    <li>Domingos: 9:00 AM - 3:00 PM</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-700 mb-2">Línea de Emergencia</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li>Todos los días</li>
+                                    <li>24 horas</li>
+                                    <li>Solo urgencias</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Síguenos en redes sociales</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-pink-500 text-white p-4 rounded-full hover:bg-pink-600 transition transform hover:scale-110">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                            <a href="#" class="bg-blue-600 text-white p-4 rounded-full hover:bg-blue-700 transition transform hover:scale-110">
+                                <i class="fab fa-facebook text-2xl"></i>
+                            </a>
+                            <a href="#" class="bg-blue-400 text-white p-4 rounded-full hover:bg-blue-500 transition transform hover:scale-110">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="#" class="bg-red-600 text-white p-4 rounded-full hover:bg-red-700 transition transform hover:scale-110">
+                                <i class="fab fa-youtube text-2xl"></i>
+                            </a>
+                        </div>
+                        <div class="mt-4 space-y-1 text-gray-600">
+                            <p>📸 Instagram: @refugiopeludito</p>
+                            <p>📘 Facebook: Refugio Peludito</p>
+                            <p>🐦 Twitter: @refugiopeludito</p>
+                            <p>📺 YouTube: Refugio Peludito Oficial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de Contacto -->
+                <div class="bg-gradient-to-br from-gray-50 to-blue-50 p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Envíanos un mensaje</h3>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Nombre *</label>
+                                <input type="text" placeholder="Tu nombre completo" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Teléfono</label>
+                                <input type="tel" placeholder="Tu número de teléfono" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email *</label>
+                            <input type="email" placeholder="tu@email.com" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Motivo del contacto *</label>
+                            <select required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Selecciona una opción</option>
+                                <option value="adopcion">Consulta sobre adopción</option>
+                                <option value="voluntariado">Información sobre voluntariado</option>
+                                <option value="donacion">Donaciones</option>
+                                <option value="emergencia">Reporte de emergencia animal</option>
+                                <option value="evento">Información sobre eventos</option>
+                                <option value="general">Consulta general</option>
+                                <option value="colaboracion">Propuesta de colaboración</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Mensaje *</label>
+                            <textarea rows="5" placeholder="Cuéntanos cómo podemos ayudarte..." required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"></textarea>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <input type="checkbox" id="newsletter" class="mt-1">
+                            <label for="newsletter" class="text-gray-600 text-sm">
+                                Quiero recibir noticias sobre adopciones, eventos y actividades del refugio
+                            </label>
+                        </div>
+
+                        <button type="submit" class="w-full bg-primary text-white py-4 rounded-lg font-semibold hover:bg-amber-600 transition text-lg">
+                            <i class="fas fa-paper-plane mr-2"></i>Enviar Mensaje
+                        </button>
+                    </form>
+
+                    <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                        <p class="text-sm text-gray-600 text-center">
+                            🔒 Tu información está segura con nosotros. Nunca compartimos datos personales con terceros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación y Mapa -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-map-marker-alt text-primary mr-3"></i>Cómo Llegar</h2>
+                <p class="text-xl text-gray-600">
+                    Visítanos y conoce nuestras instalaciones
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Indicaciones -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Indicaciones para llegar</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                                <i class="fas fa-bus text-primary mr-2"></i>En transporte público
+                            </h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>• Metro: Línea 1, Estación Grau + 10 min caminando</li>
+                                <li>• Metropolitano: Estación Ricardo Palma + 5 min caminando</li>
+                                <li>• Buses: Líneas 301, 404, 502 (Paradero Av. Esperanza)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                                <i class="fas fa-car text-primary mr-2"></i>En auto particular
+                            </h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>• Desde el centro: Av. Arequipa → Av. Esperanza</li>
+                                <li>• Desde San Isidro: Av. Javier Prado → Av. Esperanza</li>
+                                <li>• Estacionamiento disponible en el refugio</li>
+                                <li>• Tiempo aproximado: 25-35 min desde el centro</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                                <i class="fas fa-taxi text-primary mr-2"></i>En taxi o app
+                            </h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>• Uber/Cabify: Busca "Refugio Peludito"</li>
+                                <li>• Taxi: Av. Esperanza 123, Miraflores</li>
+                                <li>• Referencia: Frente al Parque Kennedy</li>
+                                <li>• Costo aprox. S/15-25 desde el centro</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-primary/10 p-6 rounded-xl border border-primary/20">
+                            <h4 class="font-semibold text-gray-800 mb-3">
+                                <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>Importante antes de visitar
+                            </h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>• Coordina tu visita por WhatsApp: +51 999 999 999</li>
+                                <li>• Respeta los horarios de atención</li>
+                                <li>• Trae documentos para el proceso de adopción</li>
+                                <li>• No olvides usar mascarilla y alcohol en gel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mapa simulado -->
+                <div>
+                    <div class="bg-white rounded-2xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Ubicación en el mapa</h3>
+                        <img src="google-maps-links-1024x546.png" alt="Mapa del refugio" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="font-semibold text-gray-800">Refugio Peludito</p>
+                                <p class="text-gray-600">Av. Esperanza 123, Miraflores</p>
+                            </div>
+                            <a href="https://maps.google.com/?q=Refugio+Peludito,Lima" target="_blank" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-amber-600 transition">
+                                <i class="fas fa-external-link-alt mr-2"></i>Ver en Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 bg-blue-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Cómo es nuestro refugio?</h4>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Área total: 1,200 m² con espacios verdes</li>
+                            <li>• Capacidad: Hasta 80 peluditos simultáneamente</li>
+                            <li>• Instalaciones: Veterinaria, área de juegos, cuarentena</li>
+                            <li>• Accesibilidad: Rampas y estacionamiento</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4"><i class="fas fa-question-circle text-primary mr-3"></i>Preguntas Frecuentes</h2>
+                <p class="text-xl text-gray-600">
+                    Resolvemos las dudas más comunes sobre adopción y nuestros servicios
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <!-- FAQ 1 -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Cuánto cuesta adoptar una mascota?</h4>
+                        <p class="text-gray-600">
+                            La adopción es gratuita. Solo pedimos una donación voluntaria para ayudar con los gastos 
+                            de esterilización, vacunas y cuidados médicos que ya recibió tu nuevo compañero.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Qué requisitos necesito para adoptar?</h4>
+                        <p class="text-gray-600">
+                            Ser mayor de edad, tener estabilidad económica básica, contar con tiempo para dedicar a la mascota 
+                            y compromiso real de cuidado. No importa si vives en casa o departamento.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Cuánto tiempo toma el proceso de adopción?</h4>
+                        <p class="text-gray-600">
+                            Entre 3 a 7 días. Incluye llenar el formulario, entrevista, período de adaptación 
+                            (si es necesario) y firma del acuerdo de adopción.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Las mascotas vienen esterilizadas?</h4>
+                        <p class="text-gray-600">
+                            Sí, todas nuestras mascotas están esterilizadas, vacunadas, desparasitadas y con chip de identificación. 
+                            También incluimos cartilla sanitaria y certificado veterinario.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Puedo devolver la mascota si no me adapto?</h4>
+                        <p class="text-gray-600">
+                            Sí, entendemos que a veces la química no funciona. Siempre pueden regresar al refugio 
+                            sin problemas. Preferimos que sean honestos a que el animal sufra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- FAQ 6 -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Cómo puedo reportar un animal en emergencia?</h4>
+                        <p class="text-gray-600">
+                            Llama a nuestro número de emergencias 24/7: +51 888 888 888. También puedes enviarnos 
+                            un WhatsApp con fotos y ubicación al +51 999 999 999.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Aceptan donaciones de alimento?</h4>
+                        <p class="text-gray-600">
+                            ¡Por supuesto! Aceptamos alimento balanceado, medicinas, mantas, juguetes y cualquier 
+                            artículo útil para el cuidado animal. Coordina la entrega por WhatsApp.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Puedo ser voluntario siendo menor de edad?</h4>
+                        <p class="text-gray-600">
+                            Sí, desde los 16 años con autorización de los padres. Hay actividades especiales para 
+                            menores como ayuda en eventos, socialización supervisada y campañas educativas.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 9 -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Realizan esterilizaciones para el público?</h4>
+                        <p class="text-gray-600">
+                            Sí, organizamos campañas mensuales de esterilización gratuita o a bajo costo. 
+                            Síguenos en redes sociales para conocer fechas y reservar tu cupo.
+                        </p>
+                    </div>
+
+                    <!-- FAQ 10 -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">¿Hacen visitas domiciliarias?</h4>
+                        <p class="text-gray-600">
+                            En algunos casos sí, especialmente para adopciones especiales o seguimiento post-adopción. 
+                            Depende de la distancia y disponibilidad de nuestro equipo de voluntarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">¿No encontraste la respuesta que buscabas?</p>
+                <button class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-amber-600 transition">
+                    <i class="fas fa-comments mr-2"></i>Escríbenos Directamente
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suscripción a Newsletter -->
+    <section class="py-20 bg-gradient-to-r from-secondary to-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6"><i class="fas fa-envelope-open-text mr-3"></i>Únete a nuestra comunidad</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                Suscríbete a nuestro boletín para conocer historias inspiradoras, próximos eventos, 
+                mascotas en adopción y formas de ayudar.
+            </p>
+            
+            <div class="max-w-md mx-auto">
+                <form class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="Tu correo electrónico" class="flex-1 p-4 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                    <button type="submit" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
+                        Suscribirme
+                    </button>
+                </form>
+                <p class="text-sm opacity-75 mt-4">
+                    📧 Enviamos máximo 2 emails por semana. Puedes cancelar en cualquier momento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="logo.png" alt="Logo Refugio Peludito" class="w-6 h-6">
+                        <span class="text-xl font-bold">Refugio Peludito</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Rescatamos, protegemos y damos en adopción a perros y gatos abandonados.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="peluditos.html" class="hover:text-white transition">Adoptar</a></li>
+                        <li><a href="ayudar.html" class="hover:text-white transition">Cómo ayudar</a></li>
+                        <li><a href="eventos.html" class="hover:text-white transition">Eventos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Adopción responsable</li>
+                        <li>Campañas de esterilización</li>
+                        <li>Educación animal</li>
+                        <li>Tienda solidaria</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📍 Av. Esperanza 123, Lima</p>
+                        <p>📞 +51 999 999 999</p>
+                        <p>📧 contacto@refugiopeludito.org</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Refugio Peludito. Todos los derechos reservados. Hecho con ❤️ para nuestros peluditos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Cambiar estilo del navbar al hacer scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+
+        // Validación del formulario
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulación de envío exitoso
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Enviando...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i>¡Mensaje Enviado!';
+                submitBtn.classList.remove('bg-primary', 'hover:bg-amber-600');
+                submitBtn.classList.add('bg-accent');
+                
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('bg-accent');
+                    submitBtn.classList.add('bg-primary', 'hover:bg-amber-600');
+                }, 3000);
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

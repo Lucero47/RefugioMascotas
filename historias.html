@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias que Inspiran - Refugio Peludito</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f59e0b'/><text y='.9em' font-size='90' x='50%' text-anchor='middle' fill='white'><tspan>🐾</tspan></text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f59e0b',
+                        secondary: '#3b82f6',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Logo Refugio Peludito" class="w-8 h-8">
+                    <span class="text-xl font-bold text-primary">Refugio Peludito</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Inicio</a>
+                    <a href="peluditos.html" class="text-gray-700 hover:text-primary transition">Nuestros Peluditos</a>
+                    <a href="historias.html" class="text-primary font-semibold">Historias</a>
+                    <a href="eventos.html" class="text-gray-700 hover:text-primary transition">Eventos</a>
+                    <a href="ayudar.html" class="text-gray-700 hover:text-primary transition">Cómo Ayudar</a>
+                    <a href="contacto.html" class="text-gray-700 hover:text-primary transition">Contacto</a>
+                </div>
+                <button class="md:hidden" title="Menú">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 bg-gradient-to-br from-purple-50 to-pink-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="mt-20 text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                <i class="fas fa-book text-primary mr-4"></i>Historias que <span class="text-primary">Inspiran</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Cada animal tiene una historia única de superación y amor. Descubre cómo nuestros rescatados 
+                encontraron la felicidad y transformaron vidas.
+            </p>
+            <div class="bg-white bg-opacity-80 p-6 rounded-2xl max-w-2xl mx-auto">
+                <p class="text-lg text-gray-700 italic">
+                    "Cada historia de rescate es un testimonio del poder del amor, la paciencia y la segunda oportunidad."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historias Principales -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <!-- Max - Historia destacada -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg">
+                    <img src="perrito adoptado.jpg" alt="Max" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <div class="space-y-4">
+                        <h2 class="text-3xl font-bold text-gray-800">🐶 Max – El valiente</h2>
+                        
+                        <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded">
+                            <h3 class="font-semibold text-red-700 mb-2">Antes del rescate:</h3>
+                            <p class="text-gray-700">
+                                Max llegó al refugio con una patita fracturada, temeroso y muy flaco. Lo encontramos 
+                                cerca de un parque, sin poder caminar bien y con mucha sed. Había perdido la confianza 
+                                en los humanos después de tanto sufrimiento.
+                            </p>
+                        </div>
+
+                        <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded">
+                            <h3 class="font-semibold text-green-700 mb-2">El proceso de recuperación:</h3>
+                            <p class="text-gray-700">
+                                Max necesitó cirugía en su patita y semanas de rehabilitación. Con mucho amor, 
+                                paciencia y cuidados médicos, poco a poco fue recuperando la confianza. Cada día 
+                                era un pequeño progreso hacia la sanación física y emocional.
+                            </p>
+                        </div>
+
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+                            <h3 class="font-semibold text-blue-700 mb-2">Después de encontrar su familia:</h3>
+                            <p class="text-gray-700">
+                                Ahora Max corre feliz junto a su nueva familia. Duerme en una cama calientita y 
+                                adora los paseos largos. Se convirtió en el compañero perfecto para aventuras 
+                                al aire libre y momentos de tranquilidad en casa.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <p class="text-gray-600 italic text-lg leading-relaxed">
+                                "Max nos enseñó a ser pacientes y valorar cada momento. Es un miembro más de nuestra 
+                                familia. Su historia nos recuerda que el amor puede curar cualquier herida."
+                            </p>
+                            <p class="text-gray-500 text-right mt-2">– Familia Rojas, adoptantes de Max</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luna - Historia destacada -->
+                <div class="bg-gradient-to-br from-pink-50 to-purple-100 rounded-2xl p-8 shadow-lg">
+                    <img src="gato feliz.jpg" alt="Luna" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <div class="space-y-4">
+                        <h2 class="text-3xl font-bold text-gray-800">🐱 Luna – De la calle al corazón</h2>
+                        
+                        <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded">
+                            <h3 class="font-semibold text-red-700 mb-2">Antes del rescate:</h3>
+                            <p class="text-gray-700">
+                                Luna vivía escondida debajo de un carro abandonado. Estaba desnutrida, llena de 
+                                pulgas y muy asustada. Durante semanas, los vecinos intentaron acercarse pero 
+                                ella huía constantemente.
+                            </p>
+                        </div>
+
+                        <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded">
+                            <h3 class="font-semibold text-green-700 mb-2">El proceso de recuperación:</h3>
+                            <p class="text-gray-700">
+                                Con paciencia y comida, nuestro equipo logró ganar su confianza. Luna necesitó 
+                                tratamiento médico y mucha socialización. Poco a poco aprendió que los humanos 
+                                podían ser fuente de amor y seguridad.
+                            </p>
+                        </div>
+
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+                            <h3 class="font-semibold text-blue-700 mb-2">Después de encontrar su familia:</h3>
+                            <p class="text-gray-700">
+                                Hoy Luna es la reina de su casa. Duerme sobre almohadas mullidas, juega con sus 
+                                nuevos hermanos humanos y ronronea como un motorcito. Su transformación es 
+                                simplemente mágica.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <p class="text-gray-600 italic text-lg leading-relaxed">
+                                "Nunca imaginé cuánto amor traería una gatita rescatada. Luna es alegría pura. 
+                                Cada ronroneo nos recuerda que salvamos una vida, pero ella salvó nuestros corazones."
+                            </p>
+                            <p class="text-gray-500 text-right mt-2">– Camila, adoptante de Luna</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Más Historias -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Más historias de amor</h2>
+                <p class="text-xl text-gray-600">
+                    Cada rescate es una nueva historia de esperanza
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Toby -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                    <img src="perro en parque.jpg" alt="Toby" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">🐶 Toby – El eterno juguetón</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-red-600 mb-1">Antes:</h4>
+                            <p class="text-sm text-gray-600">Toby fue encontrado amarrado en un terreno baldío, sin agua ni comida. Tenía miedo de todo y su pelaje estaba muy descuidado.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-green-600 mb-1">Después:</h4>
+                            <p class="text-sm text-gray-600">Con paciencia, Toby recuperó la confianza. Hoy su familia dice que es el más travieso y juguetón de la casa.</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-xs text-gray-500 italic">"Adoptar a Toby fue la mejor decisión. Nos hace reír todos los días." – Familia Gómez</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mía -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                    <img src="gato a rayas.jpeg" alt="Mía" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">🐱 Mía – La pequeña guerrera</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-red-600 mb-1">Antes:</h4>
+                            <p class="text-sm text-gray-600">Mía es una gatita que sobrevivió a un atropello. La encontramos con heridas graves en la cola y la cadera.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-green-600 mb-1">Después:</h4>
+                            <p class="text-sm text-gray-600">Con cuidados y amor, Mía sanó por completo. Ahora se pasa las tardes mirando por la ventana y durmiendo en el regazo de su adoptante.</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-xs text-gray-500 italic">"Mía nos recuerda cada día lo fuerte que pueden ser los animales." – José, adoptante</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sol -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                    <img src="perrito viejo.jpg" alt="Sol" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">🐶 Sol – Una abuelita feliz</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-red-600 mb-1">Antes:</h4>
+                            <p class="text-sm text-gray-600">Sol llegó al refugio con 10 años de edad. Sus dueños la abandonaron por "vieja". Estaba desorientada y deprimida.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-green-600 mb-1">Después:</h4>
+                            <p class="text-sm text-gray-600">Una familia amorosa decidió darle un retiro digno. Ahora Sol disfruta siestas al sol, caricias y paseos cortos pero llenos de alegría.</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-xs text-gray-500 italic">"Adoptar un perro mayor es un acto de amor profundo. Sol nos da paz y ternura." – Marta y Luis</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tom -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                    <img src="gato adulto.jpg" alt="Tom" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">🐱 Tom – El travieso</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-red-600 mb-1">Antes:</h4>
+                            <p class="text-sm text-gray-600">Tom apareció en la puerta del refugio, maullando sin parar. Era apenas un cachorro lleno de parásitos.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-green-600 mb-1">Después:</h4>
+                            <p class="text-sm text-gray-600">Hoy es un gato curioso, aventurero y muy cariñoso. Se la pasa trepando muebles y persiguiendo pelotitas.</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-xs text-gray-500 italic">"Tom llenó nuestra casa de vida. Rescatarlo fue rescatar alegría." – Sofía, adoptante</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brisa -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                    <img src="cachorros hermanos.webp" alt="Brisa con sus cachorros" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">🐶 Brisa – La protectora</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-red-600 mb-1">Antes:</h4>
+                            <p class="text-sm text-gray-600">Brisa fue rescatada de una fábrica abandonada junto a sus tres cachorros. Tenía miedo de que se los quitaran.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-green-600 mb-1">Después:</h4>
+                            <p class="text-sm text-gray-600">Los cachorros fueron adoptados y Brisa también encontró un hogar. Hoy cuida de dos niños pequeños como si fueran su manada.</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-xs text-gray-500 italic">"Brisa es nuestra guardiana. Nunca deja que nada malo nos pase." – Familia Salazar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nueva historia -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                    <img src="cachorro triste.jpg" alt="Blanquita de cachorro" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">🐱 Blanquita – El milagro blanco</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-red-600 mb-1">Antes:</h4>
+                            <p class="text-sm text-gray-600">Blanquita fue encontrada casi sin vida en una caja de cartón mojada. Tenía hipotermia y apenas respiraba.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-green-600 mb-1">Después:</h4>
+                            <p class="text-sm text-gray-600">Después de cuidados intensivos, Blanquita se recuperó completamente. Ahora es una gata consentida que ama dormir en lugares cálidos.</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-xs text-gray-500 italic">"Blanquita es nuestro pequeño milagro. Su fuerza de voluntad nos inspira cada día." – Ana María</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Inspiración -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">¿Quieres escribir la próxima historia?</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                Cada adopción es el comienzo de una nueva historia de amor. Miles de peluditos esperan 
+                la oportunidad de transformar tu vida mientras tú transformas la suya.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="peluditos.html" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
+                    <i class="fas fa-heart mr-2"></i>Ver Peluditos Disponibles
+                </a>
+                <a href="ayudar.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition">
+                    <i class="fas fa-hands-helping mr-2"></i>Otras Formas de Ayudar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="logo.png" alt="Logo Refugio Peludito" class="w-6 h-6">
+                        <span class="text-xl font-bold">Refugio Peludito</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Rescatamos, protegemos y damos en adopción a perros y gatos abandonados.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="peluditos.html" class="hover:text-white transition">Adoptar</a></li>
+                        <li><a href="ayudar.html" class="hover:text-white transition">Cómo ayudar</a></li>
+                        <li><a href="eventos.html" class="hover:text-white transition">Eventos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Adopción responsable</li>
+                        <li>Campañas de esterilización</li>
+                        <li>Educación animal</li>
+                        <li>Tienda solidaria</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📍 Av. Esperanza 123, Lima</p>
+                        <p>📞 +51 999 999 999</p>
+                        <p>📧 contacto@refugiopeludito.org</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Refugio Peludito. Todos los derechos reservados. Hecho con ❤️ para nuestros peluditos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Cambiar estilo del navbar al hacer scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>
